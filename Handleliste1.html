@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handleliste</title>
+
+    <!-- Lenker til JavaScript-fil for funksjonalitet -->
+    <script src="handleliste1.js"></script>
+
+    <!-- Lenker til CSS-fil for styling -->
+    <link rel="stylesheet" href="handleliste.css">
+
+    <!-- Favicon (ikon som vises i nettleservinduet) -->
+    <link rel="icon" href="img/Hi-TEK Logo.png" alt="Logoen til Hi-TEK">
+</head>
+<body>
+
+    <!-- Hovedcontainer for handlelisten -->
+    <div class="container">
+        <h1>Handleliste</h1>
+
+        <!-- Input-seksjon for å velge antall produkter -->
+        <div class="input-group">
+            <!-- Gaming PC -->
+            <label>GamingPC pris: <strong>21 499 kr</strong></label>
+            <label>GamingPC antall: <input type="number" id="GamingAntall" min="0"></label><br>
+
+            <!-- Laptop -->
+            <label>Laptop pris: <strong>2 790 kr</strong></label>
+            <label>Laptop antall: <input type="number" id="LaptopAntall" min="0"></label><br>
+
+            <!-- Knapp for å beregne totalpris -->
+            <button type="button" id="sigma">OK</button>
+        </div>
+
+        <!-- Viser totalpris etter beregning -->
+        <h2>SUM</h2>
+        <p id="svar"></p>
+
+        <!-- Oppsummering av kjøp -->
+        <h2>Oppsummering</h2>
+        <p id="oppsummering"></p>
+
+        <!-- Knapp for å gå videre til bestilling -->
+        <a href="bestill.html"><button type="button">Bestill</button></a>
+    </div>
+
+</body>
+</html>

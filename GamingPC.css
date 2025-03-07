@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: cadetblue;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4a7d80;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.containerGaming {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.leftBoxGaming {
+    width: 48%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-style: solid;
+    border-color: #111;
+}
+
+.leftBoxGaming img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rightColumn {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.rightBoxgaming {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #111;
+}
+
+.rightBoxgaming h2 {
+    color: #4a7d80;
+    margin-top: 0;
+}
+
+.rightBoxgaming p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.Pris {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #111;
+}
+
+.info-box {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: #111;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.topRow {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+
+.back img {
+    width: 50px; 
+    margin-left: 10px; 
+}
+
+.toptext {
+    flex-grow: 1; 
+    text-align: center; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a7d80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkcyan;
+}

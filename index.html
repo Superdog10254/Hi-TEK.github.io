@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi-TEK</title>
+    <link rel="stylesheet" href="HITEK_style.css">
+    <!--Får footer symboler fra font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/Hi-TEK Logo.png" alt="Logoen til Hi-TEK"> <!--Symbolet på vinduet-->
+</head>
+<body>
+    <h1 id="hjem">Hi-TEK</h1>
+
+    <ul class="navigation"> <!--Dette er navigasjonsmenyen med linker til forskjellige seksjoner på siden.-->
+        <li class="navigationlist"><a href="#hjem">Hjem</a></li>
+        <li class="navigationlist"><a href="#Varer">Varer</a></li>
+        <li class="navigationlist"><a href="Dubbing.html">Dubbing</a></li>
+        <li class="navigationlist"><a href="Komponenter.html">Komponenter</a></li>
+        <li class="navigationlist"><a href="Daglig.html">Daglig Leder</a></li>
+        <li class="navigationlist"><a href="#Info">Om oss</a></li>
+    </ul>
+    
+
+    <!--Her er en boks med to deler: en for logoen (venstre) og en for tekst (høyre).-->
+    <div class="container">
+        <div class="left-box">
+            <img src="img/Hi-TEK Logo.png" alt="Logo for Hi-TEK">
+        </div>
+        <div class="right-box">
+            <p>Hi-TEK er en dedikert teknologibedrift som leverer premium gaming-PC-er og laptoper for entusiaster som krever ytelse, kvalitet og stil.
+                Våre produkter er designet med fokus på innovasjon, pålitelighet og brukervennlighet, slik at du kan fokusere på det som betyr mest å spille, jobbe eller skape uten kompromisser.
+                Hos Hi-TEK er vi opptatt av å tilby teknologi som inspirerer og leverer.</p>
+        </div>
+    </div>
+
+    <h1 id="Varer">Varer</h1>
+    <!--Dette viser en laptop som et produkt med bilde, overskrift og beskrivelse.-->
+    <div class="product-container">
+        <div class="product">
+            <a href="laptop.html"><img src="img/Laptop.jpeg" alt="Bilde av en laptop"></a>
+            <h2><a href="laptop.html">Laptop</a></h2>
+            <p>Kraftig og bærbar, perfekt for gaming og produktivitet.</p>
+        </div>
+        <div class="product">
+            <a href="GamingPC.html"><img src="img/Gaming-pc.avif" alt="Bilde av Gaming PC"></a>
+            <h2><a href="GamingPC.html">Gaming PC</a></h2>
+            <p>Topp ytelse for de mest krevende spillene.</p>
+        </div>
+    </div>
+    
+    <h1 id="Info">Info</h1>
+    <div class="info-box">
+        <p><strong>Kontaktinfo: </strong> 47 420 69 420</p>
+        <p><strong>Addresse:</strong> Goonville 102</p>
+        <p><strong>Gmail:</strong> Waffle.stomp@gmail.com</p>
+    </div>
+
+
+    <!--Dette er bunnteksten med linker til sosiale medier.-->
+    <div class="footer">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!--dette gjør at når man bruker navigation knappene scroller man ned til info smoothly-->
+    <script> 
+        window.onload = function() {
+            if (window.location.hash === "#Info") {
+                const infoSection = document.getElementById("Info");
+                if (infoSection) {
+                    infoSection.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        };
+    </script>
+
+    <script>
+        window.onload = function() {
+            if (window.location.hash === "#Varer") {
+                const infoSection = document.getElementById("Varer");
+                if (infoSection) {
+                    infoSection.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        };
+    </script>
+
+    <script>
+        window.onload = function() {
+            if (window.location.hash === "#Dubbing") {
+                const infoSection = document.getElementById("Dubbing");
+                if (infoSection) {
+                    infoSection.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        };
+    </script>
+
+
+
+
+</body>
+</html>
+
+
